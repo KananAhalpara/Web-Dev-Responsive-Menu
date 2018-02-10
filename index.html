@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Navigation Demo</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--the hamburger menu icon -->
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito" rel="stylesheet">
+<!-- Hosted Google Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<header> 
+		Responsive Navigation Demo
+	</header>
+	<nav>
+		<ul>
+			<!-- NOTE: This is totally unconventional but it's his tutorial... -->
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Blog</li></a>
+			<a href="#"><li>Shop</li></a>
+			<a href="#"><li>Gallery</li></a>
+			<a href="#"><li>Contact</li></a>
+		</ul>
+		<div class="handle">Menu <i class="fa fa-bars" style="font-size:24px;float: right;"></i></div>
+	</nav>
+	
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna neque, ultrices ut diam eget, dapibus convallis elit. Vestibulum bibendum tellus nec enim eleifend finibus. Mauris tempus placerat odio, at scelerisque erat molestie non. Proin ac viverra lacus. Vivamus sit amet tellus cursus, finibus lorem vitae, pellentesque dui. Donec tincidunt vitae tortor at interdum. Duis venenatis sem non suscipit molestie. Donec finibus, ex eget dapibus varius, ante neque dictum nibh, nec rhoncus augue lectus fringilla neque. Phasellus quis gravida quam.</p>
+		<br>
+		<blockquote>&ldquo; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna neque, ultrices ut diam eget, dapibus convallis elit. Vestibulum bibendum tellus nec enim eleifend finibus. &rdquo;</blockquote>
+		<br>
+		<p>Etiam venenatis pulvinar neque, nec feugiat ipsum euismod ut. Suspendisse diam diam, sagittis euismod egestas nec, laoreet eget urna. Nulla aliquam, tortor sit amet molestie molestie, purus est volutpat nulla, vitae dictum massa lacus sit amet mi. Nullam sodales ultrices tristique. Curabitur nisl ante, eleifend tristique metus a, semper aliquam nisl. Mauris eget neque sit amet augue rutrum molestie. Aliquam erat volutpat. Integer ornare cursus lorem non fermentum. Vivamus porttitor ultrices nibh in semper. Nullam viverra non leo eget accumsan. Curabitur dapibus dui sit amet diam aliquam venenatis. Vestibulum tincidunt neque sit amet tristique dictum. Vivamus et sagittis libero, quis placerat ipsum. Nulla sagittis erat mollis mauris vestibulum, non suscipit dui vulputate. Ut vitae accumsan massa. Curabitur ac velit sit amet nunc placerat rhoncus.</p>
+	</section>
+	<footer>
+		Kanan Ahalpara &copy;
+	</footer>
+	<script>
+		$('.handle').on('click',function(){
+		 	$('nav ul').toggleClass('showing');	
+		});
+	</script>
+</body>
+</html>

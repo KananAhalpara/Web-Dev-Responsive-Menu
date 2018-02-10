@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-align: justify;
+}
+
+header{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 2px;
+	background-color: #002b3f;
+	width:100%;
+	padding: 40px 0;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+a{
+	text-decoration:none;
+	color: inherit;
+}
+
+nav ul{
+	background-color: #036f8b;
+	overflow: hidden;
+	color:white;
+	padding :0;
+	margin:0;
+	text-align: center;
+	-webkit-transition: max-height 0.4s; /* this will only operate in the mobile version when the menu is clicked and will help to animate it to a height of 20em  at speed of 0.4 seconds*/
+	-ms-transition: max-height 0.4s; /* for differnet browsers */
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+nav ul li{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 2px;
+	display:inline-block;
+	padding:20px;
+}
+
+nav ul li:hover{
+	background-color: #1ba4b7;
+}
+
+.handle{
+	font-family: 'Josefin Sans', sans-serif;
+	display: none;
+	width:100%;
+	background-color: #026077;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer; /* this will have the hand on the anchor tag when hovered */
+	color:white;
+	}
+
+section{
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5em;
+	font-size: 0.9em;
+	padding: 40px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+blockquote{
+	color:#1ba4b7;
+	font-style: italic;
+}
+
+footer{
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5em;
+	font-size: 0.7em;
+	margin: 20px 0;
+}
+/* --------- all the media queries ----------- */
+
+@media screen and (max-width: 640px){
+
+	header{
+		font-size: 1.2em;
+	}
+	nav ul{
+		max-height: 0; /* hides the element list for the mobile viewport */
+	}
+
+	.showing{
+		max-height: 20em; /* this helps to show the ul element when we want to ...that is on the click on a menu */ 
+	}/* max-height:20 em is just a height set to open up the ul element to that certain height so that ypou can view it when clicked on the menu;*/
+
+	nav ul li{
+		box-sizing: border-box; /* as we are having the padding to the list items and the width is 100%so we add the box-sizing:border-box so the content stays inthe box and not overflow because of the padding assigned to it. */
+		width:100%; /* we specify the  "ul-li"  to be 100% so the text of the list takes the whole page. */
+		padding: 15px; /* now for the mobile version we are decreasing the amount of padding to give users area to read clearly */
+	 	text-align: left;
+	 }
+
+	 .handle{
+	 	display: block; /* handle is displayed in mobile version ... ie the "Menu" written */
+	 }
+}
