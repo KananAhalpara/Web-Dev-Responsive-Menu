@@ -1,6 +1,7 @@
 # Web-Dev-Responsive-Menu
 Web Development assignment to create a responsive menu...menu turns into a hamburger menu
 <br><br>
+Your site is ready to be published at https://kananahalpara.github.io/Web-Dev-Responsive-Menu/.
 <br><br>
 ASSIGNMENT : AS FOLLOWS : 
 <br>
